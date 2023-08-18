@@ -1,6 +1,6 @@
 import "./App.css";
 import Komponenta from "./components/Komponenta";
-import Kocicka from "./components/Kocicka";
+/* import Kocicka from "./components/Kocicka"; */
 
 const App = () => {
   return (
@@ -12,9 +12,9 @@ const App = () => {
         consequuntur quos sit.
       </p>
 
-      
-      <Komponenta />
-      <Kocicka />
+      <Komponenta nazev="Pračka" popis="Suprově pere!" />
+      <Komponenta nazev="Lednice" popis="Ta ale chladí!" />
+      <Komponenta nazev="Vysavač" popis="Tyčový je super!" />
     </>
   );
 };

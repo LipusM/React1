@@ -1,8 +1,11 @@
-const Komponenta = () => {
+/* const Komponenta = ({nazev, popis}) => { */
+const Komponenta = (props) => {
+  const { nazev, popis } = props;
+
   return (
     <>
-      <h1>Kokos</h1>
-      <p>Toto je text.</p>
+      <h1>Název: {nazev}</h1>
+      <p>Popis: {popis}</p>
     </>
   );
 };
