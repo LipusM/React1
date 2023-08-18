@@ -1,47 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Komponenta from "./components/Komponenta";
+import Kocicka from "./components/Kocicka";
 
 const App = () => {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>První pokus s Reactem</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <h1>Moje první appka</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        dignissimos sint dolores tempora facere dolorem, eius adipisci
+        consequuntur quos sit.
       </p>
+
+      
+      <Komponenta />
+      <Kocicka />
     </>
-  )
-}
+  );
+};
 
-export default App
-
-
-const Komponenta = () => {
-  return (
-  <>
-      <h1>Kokos</h1> 
-      <p>Toto je text.</p>
-  </>
-  )
-}
-
-export default Komponenta
+export default App;
