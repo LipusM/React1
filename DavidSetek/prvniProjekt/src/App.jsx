@@ -26,10 +26,9 @@ const App = () => {
 
   return (
     <section className="allBooks">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book myImage={books[0].image} myTitle={books[0].title}/>
+      <Book myImage={books[1].image} myTitle={books[1].title}/>
+      <Book myImage={books[2].image} myTitle={books[2].title}/>
     </section>
   );
 };
