@@ -3,8 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './app.scss'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
   return (
     <>
