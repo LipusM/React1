@@ -1,9 +1,9 @@
-import "./Book.scss";
+import "./style.scss";
 import OrderButton from "../OrderButton";
 
 const Book = () => {
   return (
-    <section>
+    <section className="oneBook">
       <h2 className="bookHeading">Název knihy</h2>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ab
       enim, animi a aspernatur vero? Eum fuga, dolorem laboriosam eveniet

@@ -1,7 +1,9 @@
-section {
+.oneBook {
 
     display: flex;
     flex-direction: column;
+
+    width: 300px;
 
     .bookHeading {
         color: rgba(57, 39, 39, 0.77);

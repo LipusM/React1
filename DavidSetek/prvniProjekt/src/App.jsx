@@ -5,12 +5,12 @@ import Book from "./components/Book";
 
 const App = () => {
   return (
-    <>
+    <section className="allBooks">
       <Book />
       <Book />
       <Book />
       <Book />
-    </>
+    </section>
   );
 };
 
