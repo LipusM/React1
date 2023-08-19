@@ -1,13 +1,17 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './app.scss'
+
+import Example from './components/Example'
 
 const App = () => {
 
   return (
     <>
-
+      <Example />
+      <Example />
+      <Example />
+      <Example />
     </>
   )
 }
