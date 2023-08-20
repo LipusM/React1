@@ -1,9 +1,15 @@
-import "./style.scss"
+const c = console.log.bind(document)
+
+import "./style.scss";
 
 const Example = () => {
+  let title = "Můj první title";
 
-    return (
-        <h1>Nic moc</h1>
-    )
-}
-export default Example
+  return (
+    <section>
+      <h2>{title}</h2>
+      <button type="button">Změnit title</button>
+    </section>
+  );
+};
+export default Example;
