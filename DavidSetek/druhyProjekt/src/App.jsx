@@ -7,9 +7,9 @@ import Example from './components/Example'
 const App = () => {
 
   return (
-    <>
+    <section className='appComponent'>
       <Example />
-    </>
+    </section>
   )
 }
 
