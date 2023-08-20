@@ -1,0 +1,16 @@
+.exampleSection{
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        text-align: center;
+        color: #91bbf2;
+    }
+
+    button{
+        background-color: #035aa6;
+        color: #91bbf2;
+        border: none;
+        margin: 5px 0px;
+    }
+}
