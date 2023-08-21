@@ -6,6 +6,8 @@ import data from "../../data";
 
 const AllTasks = (props) => {
 
+    const [myTask, setMyTask] = useState(data)
+
     const tasksHandler = () => {
         c("Kliknuto!")
     }
@@ -13,7 +15,7 @@ const AllTasks = (props) => {
   return (
     <div>
       {
-          data.map( oneTask => {
+          myTask.map( oneTask => {
             const {id, name} = oneTask
 
             return <div className="one-task" key={id}>
