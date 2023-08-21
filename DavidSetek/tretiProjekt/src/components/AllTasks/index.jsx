@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./style.scss";
 import data from "../../data";
 
-const AllTasks = (props) => {
+const AllTasks = () => {
 
     const [myTask, setMyTask] = useState(data)
 
