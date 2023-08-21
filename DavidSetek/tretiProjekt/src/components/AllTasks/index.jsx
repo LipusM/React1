@@ -8,8 +8,14 @@ const AllTasks = (props) => {
 
     const [myTask, setMyTask] = useState(data)
 
-    const tasksHandler = () => {
-        c("Kliknuto!")
+    const tasksHandler = (id) => {
+        const filteredTasks = myTask.filter( oneTask => {
+            if(oneTask.id !== id){
+                return oneTask.id
+            }
+        } )
+
+        setMyTask(filteredTasks)
     }
 
   return (
@@ -20,7 +26,7 @@ const AllTasks = (props) => {
 
             return <div className="one-task" key={id}>
                 <h4>{name}</h4>
-                <button type="button" onClick={tasksHandler}>Vymazat</button>
+                <button type="button" onClick={ () => tasksHandler(id)}>Vymazat</button>
             </div>
           })
       }
