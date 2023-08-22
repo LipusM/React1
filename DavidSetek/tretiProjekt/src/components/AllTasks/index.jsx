@@ -18,6 +18,10 @@ const AllTasks = () => {
         setMyTask(filteredTasks)
     }
 
+    const allDeleteHandler = () => {
+      setMyTask([])
+    }
+
   return (
     <div>
       {
@@ -26,10 +30,11 @@ const AllTasks = () => {
 
             return <div className="one-task" key={id}>
                 <h4>{name}</h4>
-                <button type="button" onClick={ () => tasksHandler(id)}>Vymazat</button>
+                <button onClick={ () => tasksHandler(id)}>Vymazat</button>
             </div>
           })
       }
+      <button className="main-button" onClick={allDeleteHandler}>Vše vymazat</button>
     </div>
   );
 };
