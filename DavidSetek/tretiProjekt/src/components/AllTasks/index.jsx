@@ -14,7 +14,6 @@ const AllTasks = () => {
       }
     });
 
-    c(filteredTasks.length);
     setMyTask(filteredTasks);
   };
 
