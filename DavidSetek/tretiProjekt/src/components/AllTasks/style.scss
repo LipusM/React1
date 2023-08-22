@@ -28,18 +28,29 @@
         }
     }
 
-    .main-button{
-        background-color: #91bbf2;
-        color: #011526;
+    .btnAndnmb{
+        width: 500px;
+        margin: auto;
 
-        border: none;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
 
-        padding: 10px 30px;
+        .main-button{
+            background-color: #91bbf2;
+            color: #011526;
+    
+            border: none;
+    
+            padding: 10px 30px;
+    
+            cursor: pointer;
+        }
 
-        cursor: pointer;
-
-        display: block;
-        margin: 30px auto;
+        p{
+            color: whitesmoke;
+        }
     }
 
 }
