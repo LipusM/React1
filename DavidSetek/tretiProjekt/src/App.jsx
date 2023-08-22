@@ -8,7 +8,9 @@ import AllTasks from './components/AllTasks'
 const App = () => {
 
   return (
+    <section className='all-tasks'>
       <AllTasks />
+    </section>
   )
 }
 

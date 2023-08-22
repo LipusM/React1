@@ -23,7 +23,7 @@ const AllTasks = () => {
     }
 
   return (
-    <div>
+    <div className="tasks">
       {
           myTask.map( oneTask => {
             const {id, name} = oneTask

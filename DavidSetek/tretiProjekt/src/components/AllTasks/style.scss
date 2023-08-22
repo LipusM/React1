@@ -1,0 +1,45 @@
+.tasks{
+    margin-top: 50px;
+
+    .one-task{
+        color: whitesmoke;
+        background-color: #011526;
+
+        display: flex;
+        justify-content: space-between;
+
+        width: 500px;
+
+        margin: 10px auto;
+
+        h4{
+            padding-left: 20px;
+        }
+
+        button{
+            background-color: #011526;
+            color: #91bbf2;
+
+            border: none;
+
+            padding-right: 15px;
+
+            cursor: pointer;
+        }
+    }
+
+    .main-button{
+        background-color: #91bbf2;
+        color: #011526;
+
+        border: none;
+
+        padding: 10px 30px;
+
+        cursor: pointer;
+
+        display: block;
+        margin: 30px auto;
+    }
+
+}
