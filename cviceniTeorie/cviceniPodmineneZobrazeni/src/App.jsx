@@ -39,7 +39,7 @@ const App = () => {
 
   return (
     <>
-    <Clock hour={7} minute={41} format="12h"/>
+    <Clock hour={17} minute={41} format="12h"/>
     <Clock hour={6} minute={31} format="12h"/>
     <Clock hour={17} minute={27} format="24h"/>
     <Clock hour={4} minute={53} format="24h"/>
