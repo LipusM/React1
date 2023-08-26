@@ -8,7 +8,7 @@ const ShoppingList = (props) => {
 
     return (
         <div key={id}>
-            <p><b>Položka:</b> {bought ? "✔" : "x"} {item} {amount} {unit}</p>
+            <p><b>Položka:</b> {bought && "✔"} {item} {amount} {unit}</p>
         </div>
     )
 

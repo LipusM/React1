@@ -16,15 +16,15 @@ function App() {
       item: "Rajčata",
       amount: 0.5,
       unit: "kg",
-      bought: true,
+      bought: false,
       id: 2,
     },
   ]
 
   return (
     <>
-      {toShop.map( oneItem => < ShoppingList item={oneItem.item} amount={oneItem.amount} unit={oneItem.unit} key={oneItem.id}/> )}
-    </>
+      {toShop.map( oneItem => < ShoppingList item={oneItem.item} amount={oneItem.amount} unit={oneItem.unit} key={oneItem.id} bought={oneItem.bought}/> )}
+      </>
   )
 }
 
