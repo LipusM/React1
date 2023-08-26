@@ -1,10 +1,12 @@
 import './app.scss'
 
 import ShoppingList from './components/ShoppingItem'
+import Drinks from './components/Drinks'
 
-function App() {
+const App = () => {
 
-  const toShop = [
+  //Cvičení 1: Položka nákupního seznamu
+/*   const toShop = [
     {
       item: "Brambory",
       amount: 3,
@@ -24,7 +26,13 @@ function App() {
   return (
     <>
       {toShop.map( oneItem => < ShoppingList item={oneItem.item} amount={oneItem.amount} unit={oneItem.unit} key={oneItem.id} bought={oneItem.bought}/> )}
-      </>
+    </>
+  ) */
+
+  return (
+    <>
+    <Drinks name="Tomáš" age={3}/>
+    </>
   )
 }
 
