@@ -8,7 +8,7 @@ const Clock = ({hour, minute, format}) => {
 
     if(format === "12h" && hour > 12){
         time = Math.abs(hour - 12)
-    } else if (format === "12h" && hour <= 12) {
+    } else {
         time = hour
     }
 
