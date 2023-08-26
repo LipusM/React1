@@ -2,6 +2,7 @@ import './app.scss'
 
 import ShoppingList from './components/ShoppingItem'
 import Drinks from './components/Drinks'
+import Clock from './components/Clock'
 
 const App = () => {
 
@@ -29,9 +30,19 @@ const App = () => {
     </>
   ) */
 
-  return (
+  //Cvičení 2: Nabídka nápojů
+/*   return (
     <>
     <Drinks name="Tomáš" age={3}/>
+    </>
+  ) */
+
+  return (
+    <>
+    <Clock hour={7} minute={41} format="12h"/>
+    <Clock hour={16} minute={8} format="12h"/>
+    <Clock hour={17} minute={27} format="24h"/>
+    <Clock hour={4} minute={53} format="24h"/>
     </>
   )
 }
