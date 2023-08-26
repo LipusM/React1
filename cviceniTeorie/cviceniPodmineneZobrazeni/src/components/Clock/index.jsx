@@ -14,7 +14,7 @@ const Clock = ({hour, minute, format}) => {
 
     return (
         <>
-        {format === "24h" ? <p>{hour}:{minute}</p> : <p> {time}:{minute} {hour > 12 ? "PM" : "AM"} </p>}
+        {format === "24h" ? <p>{hour}:{minute}</p> : <p> {time}:{minute} {hour >= 12 ? "PM" : "AM"} </p>}
         
         </>
     )
