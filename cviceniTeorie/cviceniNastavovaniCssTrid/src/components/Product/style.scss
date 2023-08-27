@@ -12,7 +12,9 @@ body{
     }
 
     .product--favorite{
-        color: green;
+        border: solid 1px blue;
+
+        width: max-content;
 
         &::after{
             content: " ⭐";
