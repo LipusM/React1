@@ -8,7 +8,7 @@ const Food = ({name, calories, protein, carbohydrates, fats, fiber, category}) =
     {/* <table className={calories >= 500 ? "kcal-high" : (calories >= 250 && "kcal-medium") }> */}
 
   return (
-    <table className={calories >= 500 ? "kcal-high" : (calories >= 250 && "kcal-medium") }>
+    <table className={classnames()}>
       <tbody>
         <tr>
           <td colSpan="2">{name} 100g</td>
