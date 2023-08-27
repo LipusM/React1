@@ -1,18 +1,23 @@
 body{
 
-    .nutritionTable{
-        border: solid 1px black;
-
-        margin-bottom: 10px;
-
-    }
-
     .kcal-medium{
         border: solid 2px yellow;
+
+        td{
+            border: solid 1px black;
+        }
     }
 
     .kcal-high{
         border: solid 2px red;
+
+        td{
+            border: solid 1px black;
+        }
+    }
+
+    .kcal-medium, .kcal-high{
+        margin-bottom: 20px;
     }
 
 }
