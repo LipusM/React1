@@ -3,6 +3,10 @@ const c = console.log.bind(document);
 import "./style.scss";
 
 const Food = ({name, calories, protein, carbohydrates, fats, fiber, category}) => {
+
+    //Třídy pomocí ternárního operátoru (takhle řešeno před bonusovou části)
+    {/* <table className={calories >= 500 ? "kcal-high" : (calories >= 250 && "kcal-medium") }> */}
+
   return (
     <table className={calories >= 500 ? "kcal-high" : (calories >= 250 && "kcal-medium") }>
       <tbody>
