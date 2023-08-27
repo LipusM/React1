@@ -21,7 +21,7 @@ const App = () => {
     <Food name="Rajčata" calories={250} protein={0.9} carbohydrates={3.9} fats={0.2} fiber={1} category="zelenina"/>
     <Food name="Ananas" calories={499} protein={1.7} carbohydrates={18.6} fats={0.1} fiber={1.4} category="ovoce"/>
     <Food name="Kobliha" calories={537} protein={5.5} carbohydrates={48.5} fats={35} fiber={0} category="pečivo"/>
-    <Food name="Cola sirup" calories={271} protein={5.5} carbohydrates={48.5} fats={35} fiber={0} category="pečivo"/>
+    <Food name="Cola sirup" calories={271} protein={5.5} carbohydrates={48.5} fats={35} fiber={0} category="nápoj"/>
     </>
   )
 }

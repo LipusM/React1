@@ -1,6 +1,7 @@
 const c = console.log.bind(document);
 
 import "./style.scss";
+import classnames from "classnames"
 
 const Food = ({name, calories, protein, carbohydrates, fats, fiber, category}) => {
 
@@ -8,7 +9,16 @@ const Food = ({name, calories, protein, carbohydrates, fats, fiber, category}) =
     {/* <table className={calories >= 500 ? "kcal-high" : (calories >= 250 && "kcal-medium") }> */}
 
   return (
-    <table className={classnames()}>
+    <table className={classnames(
+        {
+            "kcal-high": calories >= 500,
+            "kcal-medium": calories >= 250 && calories <=499,
+            vegetables: category === "zelenina",
+            fruit: category === "ovoce",
+            pastry: category === "pečivo",
+            drinks: category === "nápoj"
+        }
+    )}>
       <tbody>
         <tr>
           <td colSpan="2">{name} 100g</td>
