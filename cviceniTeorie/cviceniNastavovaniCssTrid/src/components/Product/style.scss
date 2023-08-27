@@ -1,0 +1,21 @@
+body{
+
+    .product{
+        
+        .product__name{
+            color: rgba(84, 61, 84, 0.897);
+        }
+
+        .product__description, .product__price{
+            color: rgb(137, 97, 37);
+        }
+    }
+
+    .product--favorite{
+        color: green;
+
+        &::after{
+            content: " ⭐";
+        }
+    }
+}
