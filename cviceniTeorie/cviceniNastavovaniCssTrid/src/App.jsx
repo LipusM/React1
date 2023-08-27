@@ -1,6 +1,8 @@
 import './app.scss'
 
-function App() {
+import Product from './components/Product'
+
+const App = () => {
 
   return (
     <>
