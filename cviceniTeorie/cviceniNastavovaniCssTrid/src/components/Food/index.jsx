@@ -2,7 +2,7 @@ const c = console.log.bind(document);
 
 import "./style.scss";
 
-const Food = ({ name, calories, protein, carbohydrates, fats, fiber }) => {
+const Food = ({name, calories, protein, carbohydrates, fats, fiber, category}) => {
   return (
     <table className={calories >= 500 ? "kcal-high" : (calories >= 250 && "kcal-medium") }>
       <tbody>
