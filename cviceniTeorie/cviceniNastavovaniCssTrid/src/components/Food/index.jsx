@@ -7,7 +7,7 @@ const Food = ({ name, calories, protein, carbohydrates, fats, fiber }) => {
     <table className={calories >= 500 ? "kcal-high" : (calories >= 250 && "kcal-medium") }>
       <tbody>
         <tr>
-          <td colspan="2">{name} 100g</td>
+          <td colSpan="2">{name} 100g</td>
         </tr>
         <tr>
           <td>Calories</td>
