@@ -1,6 +1,7 @@
 const c = console.log.bind(document)
 
 import "./style.scss"
+import classnames from "classnames"
 
 const UserInfo = ({name, surname, age, isLoggedIn}) => {
 
@@ -11,8 +12,13 @@ const UserInfo = ({name, surname, age, isLoggedIn}) => {
     info = <p>NENÍ přihlášený</p>
   } */
 
+  {/* <div className={isLoggedIn ? "userinfo loggedIn" : "userinfo notLoggedIn"}></div> */}
+
   return ( 
-    <div className="userinfo">
+    <div className={classnames("userinfo", {
+      loggedIn: isLoggedIn,
+      notLoggedIn: !isLoggedIn,
+    })}>
       <h2>Informace o uživateli</h2>
       <p>{name} {surname}, vek {age} let</p>
 
