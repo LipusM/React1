@@ -5,7 +5,7 @@ const App = () => {
   
   return (
     <>
-      <UserInfo name="Jarda" surname="Vomáčka" age={28}/>
+      <UserInfo name="Jarda" surname="Vomáčka" age={28} isLoggedIn={false}/>
     </>
   )
 
