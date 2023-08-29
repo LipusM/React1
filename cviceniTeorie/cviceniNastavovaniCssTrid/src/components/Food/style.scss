@@ -1,19 +1,17 @@
 body{
 
+    table, td, tr{
+        border: solid 1px black;
+    }
+
     .kcal-medium{
         border: solid 2px orange;
 
-        td{
-            border: solid 1px black;
-        }
     }
 
     .kcal-high{
         border: solid 2px red;
 
-        td{
-            border: solid 1px black;
-        }
     }
 
     .kcal-medium, .kcal-high{

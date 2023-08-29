@@ -12,7 +12,7 @@ const Food = ({name, calories, protein, carbohydrates, fats, fiber, category}) =
     <table className={classnames(
         {
             "kcal-high": calories >= 500,
-            "kcal-medium": calories >= 250 && calories <=499,
+            "kcal-medium": calories >= 250 && calories <= 499.9,
             vegetables: category === "zelenina",
             fruit: category === "ovoce",
             pastry: category === "pečivo",
