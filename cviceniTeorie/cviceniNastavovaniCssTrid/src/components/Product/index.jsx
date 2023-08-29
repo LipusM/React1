@@ -13,8 +13,10 @@ const Product = ({name, description, price, isFavorite}) => {
     </div>
   ); */
 
+  {/* <div className={classNames("product", {"product--favorite": isFavorite})}></div> */}
+
   return (
-    <div className={classNames("product", {"product--favorite": isFavorite})}>
+    <div className={isFavorite ? "product product--favorite" : "product"}>
       {isFavorite ? <h2>{name} ⭐</h2> : <h2>{name}</h2>}
       <p className="product__description">{description}</p>
       <p className="product__price">{price} Kč</p>
