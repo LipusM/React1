@@ -11,13 +11,19 @@ body{
         }
     }
 
-    .product--favorite{
+/*     .product--favorite{
         border: solid 1px blue;
 
         width: max-content;
 
-        &::before{
+        &::after{
             content: " ⭐";
         }
+    } */
+
+    .product--favorite{
+        border: solid 1px blue;
+
+        width: max-content;
     }
 }
