@@ -16,7 +16,7 @@ body{
 
         width: max-content;
 
-        &::after{
+        &::before{
             content: " ⭐";
         }
     }
