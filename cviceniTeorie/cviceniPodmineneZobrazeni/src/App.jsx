@@ -26,20 +26,24 @@ const App = () => {
 
   return (
     <>
-      {toShop.map( oneItem => < ShoppingList item={oneItem.item} amount={oneItem.amount} unit={oneItem.unit} key={oneItem.id} bought={oneItem.bought}/> )}
+     {toShop.map( oneItem => < ShoppingList item={oneItem.item} amount={oneItem.amount} unit={oneItem.unit} key={oneItem.id} bought={oneItem.bought}/> )}
+      <ShoppingList item="Boty" amount={1} unit="ks" bought={false}/>
+      <ShoppingList item="Boty" amount={1} unit="ks" bought={true}/>
     </>
   ) */
 
   //Cvičení 2: Nabídka nápojů
 /*   return (
     <>
-    <Drinks name="Tomáš" age={3}/>
+    <Drinks name="Tomáš" age={18}/>
     </>
   ) */
 
+
+  // Cvičení 3: Hodiny
   return (
     <>
-    <Clock hour={17} minute={41} format="12h"/>
+    <Clock hour={12} minute={0} format="12h"/>
     <Clock hour={6} minute={31} format="12h"/>
     <Clock hour={17} minute={27} format="24h"/>
     <Clock hour={4} minute={53} format="24h"/>
