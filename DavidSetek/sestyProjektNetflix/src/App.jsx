@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './app.scss'
 
-function App() {
+const App = () => {
 
   return (
     <>
-
+  <h2>Test</h2>
     </>
   )
 }
