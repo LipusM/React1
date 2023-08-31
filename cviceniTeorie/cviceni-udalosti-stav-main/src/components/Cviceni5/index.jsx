@@ -11,7 +11,7 @@ import './style.css'
 import { useState } from 'react'
 
 function Cviceni5() {
-	let count = 0
+	const count = 0
 
 	const [number, setNumber] = useState(count)
 
