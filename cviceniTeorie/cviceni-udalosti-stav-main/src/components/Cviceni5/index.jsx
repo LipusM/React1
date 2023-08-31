@@ -5,22 +5,26 @@
   hodnotu stavové proměnné
 - tlačítko Vynulovat nastaví hodnotu na nulu
 */
+const c = console.log.bind(document)
 
 import './style.css'
+import { useState } from 'react'
 
 function Cviceni5() {
-	const count = 0
+	let count = 0
+
+	const [number, setNumber] = useState(count)
 
 	return (
 		<div className="card">
 			<h3><span>5</span> Počitadlo</h3>
 
-			<button>-1</button>
-			<button>-1</button>
-			<output>{count}</output>
-			<button>+1</button>
-			<button>+5</button>
-			<button>Vynulovat</button>
+			<button onClick={ () => {setNumber(number - 1)} }>-1</button>
+			<button onClick={ () => {setNumber(number - 1)} }>-1</button>
+			<output>{number}</output>
+			<button onClick={ () => {setNumber(number + 1)} }>+1</button>
+			<button onClick={ () => {setNumber(number + 5)} }>+5</button>
+			<button onClick={ () => {setNumber(0)} }>Vynulovat</button>
 		</div>
 	);
 }
