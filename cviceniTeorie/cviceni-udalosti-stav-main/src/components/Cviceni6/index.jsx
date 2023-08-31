@@ -20,7 +20,7 @@ function Cviceni6() {
 		<div className="card">
 			<h3><span>6</span> Rozbalovací nabídka</h3>
 
-			<button onClick={handleClick}> {!text ? "Zobraz text" : "Schovat text"} </button>
+			<button onClick={handleClick}> {text ? "Schovat text" : "Zobraz text"} </button>
 			<p>
 				{
 				text && 
