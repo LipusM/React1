@@ -12,19 +12,31 @@
   vlastní stav a každou žárovku můžete rozsvěcet nezávisle
 	na ostatních
 */
+const c = console.log.bind(document)
 
 import bulbOff from './assets/off.svg'
 import bulbOn from './assets/on.svg'
 import './style.css'
 
-function Zarovka() {
-	return (
-		<img src={bulbOff} className="bulb" />
-	)
+import { useState } from 'react'
+
+const Zarovka = () => {
+
+	const [bulb, setBulb] = useState(false)
+
+	const handleClick = () => {
+		setBulb(!bulb)
+	}
+
+		return (
+			<img onClick={handleClick} src={ bulb ? bulbOn : bulbOff } className="bulb" />
+		)
+
+
 }
 
 
-function Cviceni4() {
+const Cviceni4 = () => {
 	return (
 		<div className="card">
 			<h3><span>4</span> Žárovka</h3>
