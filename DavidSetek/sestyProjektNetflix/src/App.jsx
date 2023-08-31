@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import './app.scss'
 
+import Movie from './components/Movie'
+
 const App = () => {
 
   return (
     <>
-  <h2>Test</h2>
+      <Movie />
     </>
   )
 }
