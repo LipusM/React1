@@ -1,0 +1,8 @@
+.bulb {
+	width: 66px;
+	height: 75px;
+}
+
+.bulb + .bulb {
+	margin-left: 1rem;
+}

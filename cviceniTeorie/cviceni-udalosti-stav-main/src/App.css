@@ -1,0 +1,49 @@
+#root {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h2 {
+  color: gray;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid silver;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card + .card { margin-top: 2rem;}
+
+.card :first-child { margin-top: 0; }
+.card :last-child { margin-bottom: 0; }
+
+.card h3 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  font-size: 13px;
+  color: dodgerblue;
+}
+
+.card h3 span {
+  display: flex;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 50%;
+}
+
+button {
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button + button {
+  margin-left: 0.5rem;
+}
