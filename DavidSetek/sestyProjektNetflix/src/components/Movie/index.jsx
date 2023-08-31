@@ -6,13 +6,13 @@ import allMovies from "../Data"
 const Movie = () => {
 
     return (
-        <div>
+        <div className="all-movies">
             {
                 allMovies.map( oneMovie => {
                     const {id, image, title, age, tags, description} = oneMovie
 
                     return (
-                    <div key={id}>
+                    <div className="one-movie" key={id}>
                         <img src={image} alt="" />
                         <h2>{title}</h2>
                         <p>{age}</p>
