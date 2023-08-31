@@ -7,15 +7,25 @@
 	"Myš přijela nad čtvereček"
 	"Myš odjela ze čtverečku"
 */
+const c = console.log.bind(document)
 
 import "./style.css"
 
-function Cviceni2() {
+const Cviceni2 = () => {
+
+	const handleOver = () => {
+		c("Myš přijela na čtveřeček.")
+	}
+
+	const handleLeave = () => {
+		c("Myš odjela ze čtverečku.")
+	}
+
 	return (
 		<div className="card">
 			<h3><span>2</span> Událost mouseover a mouseout</h3>
 
-			<div className="box"></div>
+			<div onMouseEnter={handleOver} onMouseLeave={handleLeave} className="box"></div>
 
 		</div>
 	);

@@ -6,8 +6,9 @@
   pro reakci na kliknutí každého tlačítka, přidejme
 	místo toho k tlačítkům anonymní funkce
 */
+const c = console.log.bind(document)
 
-function Cviceni3() {
+const Cviceni3 = () => {
 	return (
 		<div className="card">
 			<h3><span>3</span> Anonymní handlery událostí</h3>
