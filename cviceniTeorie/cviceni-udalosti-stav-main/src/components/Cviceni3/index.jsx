@@ -13,10 +13,16 @@ const Cviceni3 = () => {
 		<div className="card">
 			<h3><span>3</span> Anonymní handlery událostí</h3>
 
-			<button>🍓</button>
-			<button>🍏</button>
-			<button>🍌</button>
-			<button>🥑</button>
+			<button onClick={ () => {c(event.target.textContent)} }>🍓</button>
+			<button onClick={ () => {c(event.target.textContent)} }>🍏</button>
+			<button onClick={ () => {c(event.target.textContent)} }>🍌</button>
+			<button onClick={ () => {c(event.target.textContent)} }>🥑</button>
+
+			<button onClick={ (event) => {c(event.target.textContent)} }>🍓</button>
+			<button onClick={ (event) => {c(event.target.textContent)} }>🍏</button>
+			<button onClick={ (event) => {c(event.target.textContent)} }>🍌</button>
+			<button onClick={ (event) => {c(event.target.textContent)} }>🥑</button>
+
 		</div>
 	);
 }
