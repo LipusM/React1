@@ -6,6 +6,7 @@ import logo from "./assets/react.svg"
 
 import Udalost from './components/Udalost'
 import UkazkaStavu from './components/UkazkaStavu'
+import Pocitadlo from './components/Pocitadlo'
 
 const App = () => {
 
@@ -15,7 +16,8 @@ const App = () => {
       {/* <img src={logo} alt='React logo'/> */}
       {/* <Udalost /> */}
 
-      <UkazkaStavu />
+      {/* <UkazkaStavu /> */}
+      <Pocitadlo />
     </>
   )
 }
