@@ -2,10 +2,10 @@ const c = console.log.bind(document)
 
 import "./style.scss"
 
-const AllDeleteButton = () => {
+const AllDeleteButton = (prop) => {
 
     return (
-        <button>Vymaž všechny filmy</button>
+        <button className="main-delete-button" onClick={prop.deleteMovies}>Vymaž vše</button>
     )
 
 }

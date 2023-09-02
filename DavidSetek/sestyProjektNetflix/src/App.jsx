@@ -7,7 +7,8 @@ const App = () => {
 
   return (
     <>
-      <Movie />
+       <Movie />
+       
     </>
   )
 }
