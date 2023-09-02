@@ -1,11 +1,15 @@
 const c = console.log.bind(document)
 
+import "./style.scss"
+
+import { useState } from "react"
+
 const UkazkaStavu = () => {
 
-    let name = "Neznámá osoba"
+    const [name, setName] = useState("Neznámá osoba.")
+
     const handleClick = () => {
-        name = "Jarda Jágr"
-        c(name)
+        setName("Jarda Jágr is 68!")
     }
 
     return (
