@@ -5,7 +5,7 @@ import "./style.scss"
 const MovieDeleteButton = (prop) => {
 
     return (
-        <button onClick={prop.deleteMovie}>Vymazat film</button>
+        <button className="movie-delete-button" onClick={prop.deleteMovie}>Vymazat film</button>
     )
 
 }
