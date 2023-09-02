@@ -7,6 +7,7 @@ import logo from "./assets/react.svg"
 import Udalost from './components/Udalost'
 import UkazkaStavu from './components/UkazkaStavu'
 import Pocitadlo from './components/Pocitadlo'
+import Podminka from './components/Podminka'
 
 const App = () => {
 
@@ -17,7 +18,8 @@ const App = () => {
       {/* <Udalost /> */}
 
       {/* <UkazkaStavu /> */}
-      <Pocitadlo />
+      {/* <Pocitadlo /> */}
+      <Podminka />
     </>
   )
 }
