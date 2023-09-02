@@ -10,6 +10,16 @@ const Movie = () => {
 
     const [movieList, setMovieList] = useState(allMovies)
 
+    const deleteOneMovie = (idecko) => {
+        const filteredMovies = movieList.filter( oneMovie => {
+            if(oneMovie.id !== idecko){
+                return oneMovie.id
+            }
+        } )
+
+        setMovieList(filteredMovies)
+    }
+
     return (
         <div className="all-movies">
             {
@@ -23,7 +33,7 @@ const Movie = () => {
                         <p>{age}</p>
                         <p>{tags}</p>
                         <p>{description}</p>
-                        <MovieDeleteButton deleteMovie={deleteOneMovie}/>
+                        <MovieDeleteButton deleteMovie={ () => deleteOneMovie(id)}/>
                     </div>
                     )
 
