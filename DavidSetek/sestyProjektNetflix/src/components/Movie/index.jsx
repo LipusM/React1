@@ -55,7 +55,7 @@ const Movie = () => {
                     } )
                 }
             </div>
-            <div>
+            <div className="deleteAndReloadButton">
                 <AllDeleteButton deleteMovies={deleteAllMovies}/>
                 <ReloadMoviesButton reloadMovies={reloadAllMovies}/>
             </div>
