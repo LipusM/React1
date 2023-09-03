@@ -6,6 +6,7 @@ import { useState } from "react"
 
 import MovieDeleteButton from "../MovieDeleteButton"
 import AllDeleteButton from "../AllDeleteButton"
+import ReloadMoviesButton from "../ReloadMoviesButton"
 
 const Movie = () => {
 
@@ -27,6 +28,11 @@ const Movie = () => {
         setMovieList([])
     }
 
+    //Obnovení všech filmů
+    const reloadAllMovies = () => {
+        setMovieList(allMovies)
+    }
+
     //Načtení všech filmů
     return (
         <section>
@@ -42,7 +48,7 @@ const Movie = () => {
                             <p>{age}</p>
                             <p>{tags}</p>
                             <p>{description}</p>
-                            <MovieDeleteButton del eteMovie={ () => deleteOneMovie(id)}/>
+                            <MovieDeleteButton deleteMovie={ () => deleteOneMovie(id)}/>
                         </div>
                         )
 
@@ -51,6 +57,7 @@ const Movie = () => {
             </div>
             <div>
                 <AllDeleteButton deleteMovies={deleteAllMovies}/>
+                <ReloadMoviesButton reloadMovies={reloadAllMovies}/>
             </div>
         </section>
     )
