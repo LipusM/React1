@@ -5,7 +5,7 @@ import './app.scss'
 
 const App = () => {
 
-  {/* Přes useState */}
+  /* Přes useState */
 /*   const [number, setNumber] = useState(0)
   const [click, setClick] = useState(0)
   const handleClick = () => {
@@ -14,8 +14,12 @@ const App = () => {
   } */
 
 
-  {/* Přes useEffect */}
-  const [number, setNumber] = useState(0)
+
+
+
+  /* Přes useEffect */
+  const [value, setNumber] = useState(0)
+  const [test, setTest] = useState(0)
 
   useEffect( () => {
     /* const button = document.querySelector(".btn") */
@@ -23,22 +27,28 @@ const App = () => {
 
     const button = document.querySelector(".btn")
 
-    if(number >= 1){
-      button.textContent = `Počet kliknutí: ${number}`
+    if(value >= 1){
+      button.textContent = `Počet kliknutí: ${value}`
     }
+    
+  }, [value])
 
-  }, [])
+  useEffect( () => {
+    document.title = `Nový titulek ${test}`
+  }, [test])
 
   return (
     <>
       <h1>Já jsem return</h1>
-      <p>{number}</p>
+      <p>{value}</p>
 
       {/* Přes useState */}
       {/*  <button onClick={ handleClick }>Počet kliknutí: {click}</button> */} 
 
       {/* Přes useEffect */}
-      <button className="btn" onClick={ () => setNumber(number + 1) }>Klikni na tlačítko!</button> 
+      <button className="btn" onClick={ () => setNumber(value + 1) }>Klikni na tlačítko!</button>
+
+      <button className="btn-test" onClick={ () => setTest(test + 1) }>Test</button>
     </>
   )
 }
