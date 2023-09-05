@@ -1,0 +1,21 @@
+.emailSection{
+    position: relative;
+
+    .accountName{
+        padding: 5px;
+
+        background-color: #7cbb3a;
+
+        border-radius: 25px;
+    }
+
+    .accountMessages{
+        position: absolute;
+        right: 0%;
+
+        .no-unread{
+            opacity: 0.5;
+        }
+    }
+
+}
