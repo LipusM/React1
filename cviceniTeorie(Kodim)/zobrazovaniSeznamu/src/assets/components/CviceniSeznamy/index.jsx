@@ -3,6 +3,7 @@ const c = console.log.bind(document)
 import "./style.scss"
 
 import City from "../City";
+import cities from "./data";
 
 /* const cities = [
     'Praha',
@@ -17,7 +18,7 @@ import City from "../City";
     'Pardubice',
   ]; */
 
-  const cities = [
+/*   const cities = [
     {
       name: 'Praha',
       population: 1324277,
@@ -68,14 +69,14 @@ import City from "../City";
       population: 91727,
       area: 82.66,
     },
-  ];
+  ]; */
 
 const CviceniSeznamy = () => {
 
     return (
         <>
          {/* {cities.map(city => <div className={city.name}>{city.name}, populace: {city.population}, rozloha: {city.area}</div>)}  */}
-         {cities.map(city => <City name={city.name} population={city.population} area={city.area} /> )}
+         {cities.map(city => <City name={city.name} population={city.population} area={city.area} district={city.district} img={city.photo}/> )}
         </>
     )
 
