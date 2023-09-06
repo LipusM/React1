@@ -1,17 +1,18 @@
 
 import './app.scss'
 
-import OpakovaniMap from './assets/components/OpakovaniMap'
-import SeznamyJSX from './assets/components/SeznamyJSX'
-import SlozitejsiKomponenty from './assets/components/SlozitejsiKomponenty'
-import CviceniSeznamy from './assets/components/CviceniSeznamy'
+import OpakovaniMap from './components/OpakovaniMap'
+import SeznamyJSX from './components/SeznamyJSX'
+import SlozitejsiKomponenty from './components/SlozitejsiKomponenty'
+import CviceniSeznamy from './components/CviceniSeznamy'
+import Episode from './components/Episode'
 
 
 const App = () => {
 
   return(
     <>
-      <CviceniSeznamy />
+      <Episode />
     </>
   )
 
