@@ -76,7 +76,12 @@ const CviceniSeznamy = () => {
     return (
         <>
          {/* {cities.map(city => <div className={city.name}>{city.name}, populace: {city.population}, rozloha: {city.area}</div>)}  */}
-         {cities.map(city => <City name={city.name} population={city.population} area={city.area} district={city.district} img={city.photo}/> )}
+         {cities.map(city => <City 
+         name={city.name} 
+         population={city.population} 
+         area={city.area} 
+         district={city.district} 
+         img={city.photo}/> )}
         </>
     )
 
