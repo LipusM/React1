@@ -22,11 +22,7 @@ const Registrace = () => {
     <form onSubmit={handleSubmit}>
       <label>
         Uživatelské jméno:
-        <input
-          value={userName}
-          onChange={(e) => setUserName(e.target.value)}
-          type="text"
-        />
+        <input value={userName} onChange={(e) => setUserName(e.target.value)} type="text"/>
       </label>
       <button type="submit" disabled={userNameInput}>Registrovat</button>
     </form>
