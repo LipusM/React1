@@ -37,16 +37,45 @@ const Osoba2 = ({osoba})=> {
   )
 }
 
+const SeznamOsob = ({seznam}) => {
+  return (
+    <div>
+        {
+          seznam.map(osoba => <Osoba jmeno={osoba.jmeno} prijmeni={osoba.prijmeni} vek={osoba.vek}/> )
+        }
+    </div>
+  )
+}
+
+const data = [
+  'Mléko',
+  'Brambory',
+  'Čokoláda',
+  'Banány'
+]
+
+const NakupniSeznam = ({seznam}) => {
+  return (
+    <ul>
+      {
+        seznam.map(polozka => <li>{polozka}</li>)
+      }
+    </ul>
+  )
+}
+
 function App() {
 
   return (
     <>
       <h1>Seznamy</h1>
+      {/* <SeznamOsob seznam={osoby}/> */}
+      {/* <NakupniSeznam seznam={data}/> */}
 
       {/* {osoby.map( osoba => <Osoba2 osoba={osoba}/> )} */}
 
       {osoby
-      .filter(osoba => osoba.vek > 10)
+      /* .filter(osoba => osoba.vek > 10) */
       .map( osoba => 
       <Osoba 
       key={osoba.id}
