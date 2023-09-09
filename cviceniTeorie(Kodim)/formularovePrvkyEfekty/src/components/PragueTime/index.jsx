@@ -15,12 +15,11 @@ const PragueTime = () => {
     fetch(`https://worldtimeapi.org/api/timezone/${timezone}`)
       .then((response) => response.json())
       .then((data) => {
-        let mainTime = data.datetime;
-        mainTime = mainTime.slice(0, 19);
+        let mainTime = data.datetime.slice(0, 19)
 
         setDatetime(mainTime);
       });
-  });
+  }, []);
 
   return (
     <>
