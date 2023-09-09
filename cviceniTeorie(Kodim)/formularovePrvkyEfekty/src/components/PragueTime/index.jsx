@@ -11,15 +11,20 @@ const PragueTime = () => {
         
         fetch("https://worldtimeapi.org/api/timezone/Europe/Prague")
         .then(response => response.json())
-        .then(data => setDatetime(data.datetime))
+        .then(data => {
+            let mainTime = data.datetime
+            mainTime = mainTime.slice(0, 19)
 
+            setDatetime(mainTime)
+        })
     }, [])
 
     return (
         <>
             <h1>Pražský čas</h1>
             <div>
-                Dnešní datum: {datetime}
+                Dnešní datum: {datetime} <br />
+
             </div>
         </>
     )
