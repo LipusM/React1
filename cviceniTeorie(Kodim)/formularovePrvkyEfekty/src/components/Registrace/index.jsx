@@ -1,7 +1,6 @@
 const c = console.log.bind(document);
 
 import { useState } from "react";
-
 import "./style.scss";
 
 const Registrace = () => {
@@ -29,7 +28,7 @@ const Registrace = () => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Uživatelské jméno: <input value={userName} onChange={(e) => setUserName(e.target.value)} type="text"/>
+        Uživatelské jméno: <input value={userName} onChange={ e => setUserName(e.target.value) } type="text"/>
       </label>
 
       <label>
