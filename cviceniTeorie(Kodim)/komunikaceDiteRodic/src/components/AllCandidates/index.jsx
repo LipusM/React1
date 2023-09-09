@@ -11,6 +11,7 @@ import avatar3 from '../../assets/candidate03.png'
 import avatar4 from '../../assets/candidate04.png'
 
 const AllCandidates = () => {
+  
     const [candidates, setCandidates] = useState([]);
     const [president, setPresident] = useState(null);
   
