@@ -19,7 +19,7 @@ const PragueTime = () => {
 
         setDatetime(mainTime);
       });
-  }, []);
+  });
 
   return (
     <>
