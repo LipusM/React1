@@ -19,10 +19,15 @@ const AllMenuItems = () => {
         setMenuOpened(!menuOpened)
     }
 
+    //Stav určující název stránky
+    const [pageTitle, setPageTitle] = useState("Domů")
+
     //Fce na otevírání/zavírání menu po kliknutí na odkaz v menu
-    const handleSelectItem = () => {
+    const handleSelectItem = (pageTitle) => {
         setMenuOpened(false)
+        setPageTitle(pageTitle)
     }
+
 
     return (
       <>
@@ -41,7 +46,7 @@ const AllMenuItems = () => {
           </div>
         </header>
         <main>
-          <h1>Domů</h1>
+          <h1>{pageTitle}</h1>
         </main>
       </>
     );
