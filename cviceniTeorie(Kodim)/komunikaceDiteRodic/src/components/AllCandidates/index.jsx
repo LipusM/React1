@@ -21,6 +21,10 @@ const AllCandidates = () => {
       { name: "Beáta Skočdopolová", avatar: avatar3 },
       { name: "Lubomír Poňuchálek", avatar: avatar4 },
     ]), []);
+
+    const handleVote = (name) => {
+      setPresident(name)
+    }
     
     return (
       <div className="container">
@@ -43,6 +47,7 @@ const AllCandidates = () => {
               key={c.name}
               name={c.name} 
               avatar={c.avatar} 
+              onVote={handleVote}
             />
           ))}
         </div>
