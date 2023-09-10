@@ -2,7 +2,7 @@ const c = console.log.bind(document);
 
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
-import Rate from "./Rate";
+import Rate from "../Rate";
 import "./style.scss";
 
 const KurzovniListek = () => {
