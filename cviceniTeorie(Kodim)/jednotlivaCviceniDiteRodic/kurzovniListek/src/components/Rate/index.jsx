@@ -4,19 +4,18 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./style.scss";
 
-const currencies = {
+//Cvičná data před použitím API
+/* const currencies = {
   USD: { CZK: 23.823 },
   EUR: { CZK: 24.74 },
   GBP: { CZK: 29.067 },
-};
-
-
-
+}; */
 
 
 const Rate = ({from}) => {
 
-  const [rate, setRate] = useState(currencies.USD.CZK)
+  //Pro stanovení konverzního kurzu
+  const [rate, setRate] = useState("")
 
   useEffect( () => {
     const fromCurrency = document.querySelector(".rate__currency").textContent.slice(-3)
