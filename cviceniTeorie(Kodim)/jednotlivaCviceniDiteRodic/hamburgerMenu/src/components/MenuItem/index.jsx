@@ -4,10 +4,10 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.scss';
 
-const MenuItem = (props) => {
+const MenuItem = ({text, onSelect}) => {
     return (
-      <a href="#" className="menu-item">
-        {props.text}
+      <a href="#" className="menu-item" onClick={onSelect}>
+        {text}
       </a>
     );
   };
