@@ -19,7 +19,7 @@ const Rate = ({from}) => {
   const [rate, setRate] = useState(currencies.USD.CZK)
 
   useEffect( () => {
-    let fromCurrency = document.querySelector(".rate__currency").textContent.slice(-3)
+    const fromCurrency = document.querySelector(".rate__currency").textContent.slice(-3)
     
     if(fromCurrency === "EUR"){
       setRate(currencies.EUR.CZK)
