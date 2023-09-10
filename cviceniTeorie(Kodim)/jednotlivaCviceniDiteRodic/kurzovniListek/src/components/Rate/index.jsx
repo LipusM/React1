@@ -21,13 +21,12 @@ const Rate = ({from}) => {
   useEffect( () => {
     const fromCurrency = document.querySelector(".rate__currency").textContent.slice(-3)
     
-    if(fromCurrency === "EUR"){
-      setRate(currencies.EUR.CZK)
-    } else if(fromCurrency === "GBP") {
-      setRate(currencies.GBP.CZK)
-    } else {
-      setRate(currencies.USD.CZK)
-    }
+    fetch(`https://api.frankfurter.app/latest?from=${fromCurrency}&to=CZK`)
+    .then(response => response.json())
+    .then(data => {
+      const currentRate = data.rates.CZK
+      setRate(currentRate)
+    })
   }, [from])
 
 
