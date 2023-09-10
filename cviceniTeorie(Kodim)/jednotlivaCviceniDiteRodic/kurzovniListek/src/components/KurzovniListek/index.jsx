@@ -16,6 +16,7 @@ const KurzovniListek = () => {
     <div className="container">
       <h1>Kurzovní lístek</h1>
       <div className="currency-info">
+
         <form>
           <div className="form-field">
             <label htmlFor="currency-select">Měna:</label>
@@ -26,7 +27,8 @@ const KurzovniListek = () => {
             </select>
           </div>
         </form>
-        <Rate />
+
+        <Rate from={currency}/>
       </div>
     </div>
   );
