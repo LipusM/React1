@@ -5,11 +5,11 @@ import React from "react";
 import QuestionBody from "../QuestionBody";
 import Option from "../Option";
 
-const Question = (props) => {
+const Question = ({text}) => {
   return (
     <div className="container">
       <div className="question">
-        <QuestionBody iconType="symbolQuestion" text={props.text} />
+        <QuestionBody iconType="symbolQuestion" text={text} />
         <div className="question__options">
           <Option type="smileyStrongYes" text="Souhlasím" />
           <Option type="smileyYes" text="Spíše souhlasím" />
