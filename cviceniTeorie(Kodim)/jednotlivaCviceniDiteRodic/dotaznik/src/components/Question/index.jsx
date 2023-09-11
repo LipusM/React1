@@ -8,15 +8,15 @@ import Option from "../Option";
 
 const Question = ({text}) => {
 
-  const [answered, setAnswered] = useState(false)
-  const handleSelect = () => {
-    setAnswered(!answered)
+  const [answere, setAnswere] = useState("symbolQuestion")
+  const handleSelect = (iconType) => {
+    setAnswere(iconType)
   }
 
   return (
     <div className="container">
       <div className="question">
-        <QuestionBody iconType={!answered ? "symbolQuestion" : "symbolTick"} text={text}/>
+        <QuestionBody iconType={answere} text={text}/>
         <div className="question__options">
           <Option type="smileyStrongYes" text="Souhlasím" onSelected={handleSelect}/>
           <Option type="smileyYes" text="Spíše souhlasím" onSelected={handleSelect}/>
