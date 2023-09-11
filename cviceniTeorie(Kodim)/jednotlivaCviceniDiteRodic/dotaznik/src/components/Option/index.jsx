@@ -5,9 +5,9 @@ import './style.scss';
 
 import Icon from '../Icon';
 
-const Option = ({type, text}) => {
+const Option = ({type, text, onSelected}) => {
     return (
-      <div className="option">
+      <div className="option" onClick={onSelected}>
         <Icon type={type} />
         <div>{text}</div>
       </div>
