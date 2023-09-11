@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { render } from 'react-dom';
 import Candidate from '../Candidate/index.jsx';
 import './style.scss';
+import Castle from '../Castle/index.jsx';
 
 import avatar1 from "../../assets/candidate01.png"
 import avatar2 from '../../assets/candidate02.png'
@@ -28,17 +29,8 @@ const AllCandidates = () => {
     
     return (
       <div className="container">
-        <div className="castle">
-          <div className="castle__image"></div>
-          <div className="castle__body">
-            <h1>Nový prezident</h1>
-            <p className="castle__president">
-              {
-                president === null ? 'Vyberte svého kandidáta' : president
-              }
-            </p>
-          </div>
-        </div>
+
+        <Castle president={president}/>
         
         <h2>Kandidátí</h2>
         <div className="candidate-list">
