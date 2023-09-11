@@ -5,13 +5,13 @@ import './style.scss'
 
 import Icon from "../Icon"
 
-const QuestionBody = (props) => {
+const QuestionBody = ({text, iconType}) => {
     return (
       <div className="question__body">
         <p className="question__text">
-          {props.text}
+          {text}
         </p>
-        <Icon type={props.iconType} />
+        <Icon type={iconType} />
       </div>
     );
   };
