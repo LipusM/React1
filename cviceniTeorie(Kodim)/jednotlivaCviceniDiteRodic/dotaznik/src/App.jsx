@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <>
-
+      <Question text="Kdo jinému jámu kopá, sám do ní padá."/>
     </>
   )
 }

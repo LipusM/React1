@@ -1,7 +1,7 @@
 const c = console.log.bind(document)
 
 import React from 'react';
-import './style.css';
+import './style.scss';
 
 const SmileyContent = ({ type }) => {
     let d = null;
