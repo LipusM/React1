@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import './index.scss'
 
 import App from './App.jsx'
+import HomePage from './pages/HomePage';
 import ExpensesPage from './pages/ExpensesPage';
 import InvoicesPage from './pages/InvoicesPage/index.jsx';
 
