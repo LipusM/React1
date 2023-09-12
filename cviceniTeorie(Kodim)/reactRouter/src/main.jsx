@@ -13,9 +13,12 @@ import InvoicesPage from './pages/InvoicesPage/index.jsx';
 
 const router = createBrowserRouter([
   {
-    path: '/',
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
       {
         path: '/expenses',
         element: <ExpensesPage />,

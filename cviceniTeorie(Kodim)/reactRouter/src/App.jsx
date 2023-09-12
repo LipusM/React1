@@ -17,7 +17,7 @@ const App = () => {
         <span> | </span>
         <Link to="/expenses">Expenses</Link>
       </nav>
-      <h1>Bookkeeper!</h1>
+     {/*  <h1>Bookkeeper!</h1> */}
       <Outlet />
     </div>
   )
