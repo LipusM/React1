@@ -39,6 +39,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-/* createRoot(document.querySelector('#root')).render(
-  <RouterProvider router={router} />
-); */
