@@ -1,0 +1,19 @@
+header{
+    border: solid 1px red;
+
+    position: fixed;
+    top: 0px;
+
+    width: 95%;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    margin-bottom: 5px;
+
+    nav{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}

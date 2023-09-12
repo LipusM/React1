@@ -1,25 +1,24 @@
-const c = console.log.bind(document)
+const c = console.log.bind(document);
 
-import React from "react"
-import { Link, Outlet } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
 
-import "./style.scss"
+import "./style.scss";
 
-import Footer from "../Footer"
+import Footer from "../Footer";
 
 const NavBar = () => {
-    return (
-        <header className="container">
-        <nav>
+  return (
+    <header className="container">
+      <nav>
         <Link to="/">Home</Link>
-          <span> | </span>
-          <Link to="/invoices">Invoices</Link>
-          <span> | </span>
-          <Link to="/expenses">Expenses</Link>
-        </nav>
-        <Outlet />
-      </header>
-    )
+        <span> | </span>
+        <Link to="/invoices">Invoices</Link>
+        <span> | </span>
+        <Link to="/expenses">Expenses</Link>
+      </nav>
+    </header>
+  )
 }
 
-export default NavBar
+export default NavBar;

@@ -1,5 +1,5 @@
 footer{
-    border: solid 5px red;
+    border: solid 1px red;
 
     position: fixed;
     bottom: 5px;
@@ -8,4 +8,9 @@ footer{
     right: 0;
     width: 95%;
     margin: auto;
+
+    #footer{
+        display: flex;
+        justify-content: center;
+    }
 }
