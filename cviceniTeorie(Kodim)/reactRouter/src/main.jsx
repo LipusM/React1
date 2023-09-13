@@ -9,6 +9,7 @@ import App from './App.jsx'
 import HomePage from './pages/HomePage';
 import ExpensesPage from './pages/ExpensesPage';
 import InvoicesPage from './pages/InvoicesPage/index.jsx';
+import ErrorPage from './pages/ErrorPage';
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+        errorElement: <ErrorPage />,
       },
       {
         path: '/expenses',
@@ -27,6 +29,10 @@ const router = createBrowserRouter([
         path: '/invoices',
         element: <InvoicesPage />,
       },
+/*       {
+        path: "*",
+        element: <ErrorPage />
+      } */
     ]
   },
 ]);
