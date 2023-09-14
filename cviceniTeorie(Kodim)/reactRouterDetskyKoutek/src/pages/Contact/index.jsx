@@ -5,7 +5,7 @@ import "./style.scss";
 const Contact = () => {
   return (
     <main id="contactPage">
-      <h2>O nás</h2>
+      <h2>Kontakt</h2>
       <p>
         Pokud máte jakékoliv otázky, nápady nebo nám chcete prostě jen napsat,
         zanechte nám zprávu přes náš kontaktní formulář a my se vám co nejdříve

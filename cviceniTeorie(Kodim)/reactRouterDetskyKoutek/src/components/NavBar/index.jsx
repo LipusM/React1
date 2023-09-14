@@ -1,6 +1,6 @@
 const c = console.log.bind(document)
 
-import { Link } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 import "./style.scss"
 
 const NavBar = () => {
