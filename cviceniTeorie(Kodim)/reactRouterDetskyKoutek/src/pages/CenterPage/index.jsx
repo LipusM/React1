@@ -3,6 +3,7 @@ const c = console.log.bind(document);
 import { Link } from "react-router-dom";
 
 import centers from "../../data/centers";
+import CenterDetail from "../CenterDetail";
 
 import { getAllCenters } from "../../data/centers";
 const centerDetails = getAllCenters();

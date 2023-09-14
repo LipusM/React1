@@ -8,6 +8,7 @@ import Home from "./pages/Home"
 import Contact from "./pages/Contact"
 import About from "./pages/About"
 import Pobocky from './pages/Pobocky'
+import CenterPage from './pages/CenterPage'
 import CenterDetail from './pages/CenterDetail'
 import ErrorPage from './pages/ErrorPage'
 
@@ -34,14 +35,18 @@ const router = createBrowserRouter([
       {
         path: "/pobocky",
         element: <Pobocky />,
+        children: [
+          {
+            path: "/pobocky/:id",
+            element: <CenterDetail />
+          }
+        ]
       },
-      {
-        path: "/pobocky/:id",
-        element: <CenterDetail />
-      }
     ]
   }
 ])
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
