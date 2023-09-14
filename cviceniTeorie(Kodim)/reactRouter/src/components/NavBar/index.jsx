@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 import "./style.scss";
 
-import Footer from "../Footer";
 
 const NavBar = () => {
   return (

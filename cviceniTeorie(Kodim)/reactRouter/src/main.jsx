@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createRoot } from 'react-dom/client';
+/* import { createRoot } from 'react-dom/client'; */
 import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 
 import './index.scss'
@@ -19,7 +19,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
-        errorElement: <ErrorPage />,
       },
       {
         path: '/expenses',
@@ -29,10 +28,10 @@ const router = createBrowserRouter([
         path: '/invoices',
         element: <InvoicesPage />,
       },
-/*       {
+      {
         path: "*",
         element: <ErrorPage />
-      } */
+      }
     ]
   },
 ]);
