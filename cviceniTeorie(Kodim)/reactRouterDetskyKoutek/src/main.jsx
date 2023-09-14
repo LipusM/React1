@@ -32,7 +32,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/pobocky",
-        element: <Pobocky />
+        element: <Pobocky />,
+        children: [
+          {
+            path: "/pobocky/:id",
+            element: <Pobocky />
+          }
+        ]
       },
 /*       {
         path: "/pobocky/id-pobocky",
