@@ -1,15 +1,16 @@
 const c = console.log.bind(document)
 
 import React from "react"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 
 import "./style.scss"
+import centers from "../../data/centers"
 import { getCenterById } from "../../data/centers"
 
 const CenterDetail = ({address, info}) => {
 
     const {centerID} = useParams()
-    c(centerID)
+    const center = center.find
 
     return (
         <div>
