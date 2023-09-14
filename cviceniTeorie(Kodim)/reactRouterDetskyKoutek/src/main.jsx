@@ -7,10 +7,11 @@ import App from './App.jsx'
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"
 import About from "./pages/About"
-/* import CenterPage from './pages/CenterPage/index.jsx' */
-/* import CenterDetail from './pages/CenterDetail' */
 import Pobocky from './pages/Pobocky'
+import CenterDetail from './pages/CenterDetail'
 import ErrorPage from './pages/ErrorPage'
+
+import centers from './data/centers'
 
 
 const router = createBrowserRouter([
@@ -33,17 +34,11 @@ const router = createBrowserRouter([
       {
         path: "/pobocky",
         element: <Pobocky />,
-        children: [
-          {
-            path: "/pobocky/:id",
-            element: <Pobocky />
-          }
-        ]
       },
-/*       {
-        path: "/pobocky/id-pobocky",
+      {
+        path: "/pobocky/:id",
         element: <CenterDetail />
-      } */
+      }
     ]
   }
 ])
