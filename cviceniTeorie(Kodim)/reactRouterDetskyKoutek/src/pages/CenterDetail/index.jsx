@@ -5,7 +5,6 @@ import { useParams, Outlet } from "react-router-dom"
 
 import "./style.scss"
 import centers from "../../data/centers"
-import { getCenterById } from "../../data/centers"
 
 import CenterPage from "../CenterPage"
 
