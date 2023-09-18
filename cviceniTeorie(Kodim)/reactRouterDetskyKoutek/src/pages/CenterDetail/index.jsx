@@ -1,7 +1,7 @@
 const c = console.log.bind(document)
 
 import React from "react"
-import { useParams, Outlet } from "react-router-dom"
+import { useParams } from "react-router-dom"
 
 import "./style.scss"
 import centers from "../../data/centers"
