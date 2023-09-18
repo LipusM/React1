@@ -3,5 +3,21 @@ header{
         display: flex;
         gap: 10px;
         justify-content: center;
+
+        a{
+            text-decoration: none;
+        }
+
+        .activeLink{
+            color: green;
+        }
+
+        .nonActiveLink{
+            color: orange;
+        }
+
+        .pending{
+            color: red;
+        }
     }
 }
