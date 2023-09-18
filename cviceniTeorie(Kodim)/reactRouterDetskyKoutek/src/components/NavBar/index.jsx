@@ -1,6 +1,7 @@
 const c = console.log.bind(document);
 
 import { Link, Outlet, NavLink } from "react-router-dom";
+import classnames from "classnames";
 import "./style.scss";
 
 const NavBar = () => {
