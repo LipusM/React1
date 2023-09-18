@@ -8,7 +8,7 @@ import centers from "../../data/centers"
 
 import CenterPage from "../CenterPage"
 
-const CenterDetail = (props) => {
+const CenterDetail = () => {
 
     const { id } = useParams()
     const centerInfo = centers.find( oneCenter => oneCenter.id === id )
