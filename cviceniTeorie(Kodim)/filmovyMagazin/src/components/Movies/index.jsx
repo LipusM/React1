@@ -9,8 +9,10 @@ const Movies = () => {
     return (
         <main>
             <h2>Movies page</h2>
+            <div id="movies">
             <MoviesList />
                 <Outlet />
+            </div>
         </main>
     )
 }

@@ -11,12 +11,13 @@ const Movie = () => {
     const selectedMovie = movies.find(chosenMovie=> chosenMovie.id === Number(id))
 
     return (
-        <>
-            <h2>Vybraný film: {selectedMovie.title}</h2>
-            {
-                c(typeof(id))
-            }
-        </>
+        <div id="movie">
+            <h2>Movie: {selectedMovie.title}</h2>
+            <p>Release date: {selectedMovie.year} </p>
+            <p>Genre: {selectedMovie.genre}</p>
+            <p>Rating: {selectedMovie.rating}</p>
+            <p>Director: {selectedMovie.director}</p>
+        </div>
     )
 }
 

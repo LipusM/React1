@@ -7,7 +7,7 @@ import movies from "../../movieDatabase"
 
 const MoviesList = () => {
     return (
-        <div>
+        <div id="moviesList">
             <ul>
                 {movies.map(movie => 
                 <li key={movie.id}> 
