@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.scss'
 
 import App from './App.jsx'
+import ErrorPage from "./components/ErrorPage"
 import Articles from "./components/Articles"
 import Home from './components/Home'
 import Movies from './components/Movies'
