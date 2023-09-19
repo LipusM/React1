@@ -1,5 +1,7 @@
 const c = console.log.bind(document)
 
+import { Outlet } from 'react-router-dom'
+
 import './style.scss'
 import MoviesList from '../MoviesList'
 

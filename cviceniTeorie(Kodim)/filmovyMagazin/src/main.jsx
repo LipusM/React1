@@ -9,6 +9,7 @@ import ErrorPage from "./components/ErrorPage"
 import Articles from "./components/Articles"
 import Home from './components/Home'
 import Movies from './components/Movies'
+import Movie from './components/Movie'
 import Reviews from "./components/Reviews"
 
 const router = createBrowserRouter([
@@ -33,7 +34,8 @@ const router = createBrowserRouter([
         element: <Movies />,
         children: [
           {
-            path: "/movies/:id"
+            path: "/movies/:id",
+            element: <Movie />
           }
         ]
       }
