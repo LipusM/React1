@@ -13,8 +13,31 @@ import Reviews from "./components/Reviews"
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/reviews",
+        element: <Reviews/>
+      },
+      {
+        path: "/articles",
+        element: <Articles />
+      },
+      {
+        path: "/movies",
+        element: <Movies />,
+        children: [
+          {
+            path: "/movies/:id"
+          }
+        ]
+      }
+    ]
   }
 ])
 
