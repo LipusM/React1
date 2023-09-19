@@ -8,11 +8,14 @@ import movies from "../../movieDatabase"
 const Movie = () => {
 
     const { id } = useParams()
-    const selectedMovie = movies.find(chosenMovie=> chosenMovie.id === id)
+    const selectedMovie = movies.find(chosenMovie=> chosenMovie.id === Number(id))
 
     return (
         <>
             <h2>Vybraný film: {selectedMovie.title}</h2>
+            {
+                c(typeof(id))
+            }
         </>
     )
 }
