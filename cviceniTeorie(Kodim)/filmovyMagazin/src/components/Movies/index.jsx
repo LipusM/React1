@@ -10,6 +10,7 @@ const Movies = () => {
         <main>
             <h2>Movies page</h2>
             <MoviesList />
+                <Outlet />
         </main>
     )
 }

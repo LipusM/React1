@@ -3,13 +3,13 @@ const c = console.log.bind(document)
 import { NavLink } from "react-router-dom"
 
 import "./style.scss"
-import movieDatabase from "../../movieDatabase"
+import movies from "../../movieDatabase"
 
 const MoviesList = () => {
     return (
         <div>
             <ul>
-                {movieDatabase.map(movie => 
+                {movies.map(movie => 
                 <li key={movie.id}> 
                     <NavLink to={`/movies/${movie.id}`}>{movie.title}</NavLink> 
                 </li>)}
