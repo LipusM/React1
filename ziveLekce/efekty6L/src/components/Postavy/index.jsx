@@ -25,16 +25,12 @@ const Postavy = () => {
         <>
         <h2>Postavy</h2>
 
-
-        
-
-
-        { nacitani ? <p>Načítám data</p> :
-        
+        { nacitani ?
+        <p>Načítám data</p> 
+        :
         postavy.map(postava => <Postava key={postava.name} name={postava.name} rokNarozeni={postava.birth_year} barvaOci={postava.eye_color}
             vyska={postava.height}
             />)
-        
         }
         </>
     )
